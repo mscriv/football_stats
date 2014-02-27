@@ -7,6 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+ <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "football_stats" %>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "Players",    '#' %></li>
+              <li><%= link_to "Player_Stats",    '#' %></li>
+              <li><%= link_to "Events", '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">  
 
 <%= yield %>
 

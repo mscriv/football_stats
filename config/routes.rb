@@ -1,5 +1,6 @@
 FootballStats::Application.routes.draw do
-  get "welcome/index"
+  get "welcome/home"
+  get "welcome/help"
   resources :player_stats
 
   resources :players
