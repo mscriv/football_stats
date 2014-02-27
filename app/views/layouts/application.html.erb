@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FootballStats</title>
+  <title>Stats Wiz | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
- <header class="navbar navbar-fixed-top navbar-inverse">
+ <header class="navbar navbar-fixed-top navbar-default">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to "football_stats" %>
+          
           <nav>
-            <ul class="nav pull-right">
+            <ul class="nav navbar-nav justified">
+              <li><%= link_to "Home",    '#' %></li>
+              <li><%= link_to "Help",    '#' %></li>
+              <li><%= link_to "Sign",    '#' %></li>
               <li><%= link_to "Players",    '#' %></li>
-              <li><%= link_to "Player_Stats",    '#' %></li>
+              <li><%= link_to "Player Stats",    '#' %></li>
               <li><%= link_to "Events", '#' %></li>
+              <li><%= link_to "Combine Results", '#' %></li>
+              
             </ul>
           </nav>
         </div>
