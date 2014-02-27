@@ -1,0 +1,28 @@
+<h1>Players</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>College</th>
+      <th>Position</th>
+      <th> 40 yd dash</th>
+      <th>Bench press</th>
+      <th>Vertical jump</th>    
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @combines.each do |combine| %>
+      <tr>
+        <td><%= combine.name %></td>
+        <td><%= combine.college %></td>
+        <td><%= combine.position %></td>
+        <td><%= combine._40_yd_dash %></td>
+        <td><%= combine.bench_press %></td>
+        <td><%= combine.vertical_jump %></td>      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

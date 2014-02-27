@@ -1,0 +1,41 @@
+<%= form_for(@combine) do |f| %>
+  <% if @combine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@combine.errors.count, "error") %> prohibited this combine from being saved:</h2>
+
+      <ul>
+      <% @combine.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :college %><br>
+    <%= f.text_field :college %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :_40_yd_dash %><br>
+    <%= f.text_field :_40_yd_dash %>
+  </div>
+  <div class="field">
+    <%= f.label :bench_press %><br>
+    <%= f.number_field :bench_press %>
+  </div>
+  <div class="field">
+    <%= f.label :vertical_jump %><br>
+    <%= f.text_field :vertical_jump %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

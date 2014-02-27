@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  college: MyString
+  position: MyString
+  _40_yd_dash: 9.99
+  bench_press: 1
+  vertical_jump: 9.99
+
+two:
+  name: MyString
+  college: MyString
+  position: MyString
+  _40_yd_dash: 9.99
+  bench_press: 1
+  vertical_jump: 9.99
