@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_guide: MyString
+  nickname: MyString
+  market: MyString
+  team_details: 
+
+two:
+  team_guide: MyString
+  nickname: MyString
+  market: MyString
+  team_details: 

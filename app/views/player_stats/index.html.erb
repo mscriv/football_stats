@@ -1,0 +1,29 @@
+<h1>Listing player_stats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Stats</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @player_stats.each do |player_stat| %>
+      <tr>
+        <td><%= player_stat.player_id %></td>
+        <td><%= player_stat.stats %></td>
+        <td><%= link_to 'Show', player_stat %></td>
+        <td><%= link_to 'Edit', edit_player_stat_path(player_stat) %></td>
+        <td><%= link_to 'Destroy', player_stat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player stat', new_player_stat_path %>

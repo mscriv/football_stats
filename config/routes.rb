@@ -1,4 +1,10 @@
 FootballStats::Application.routes.draw do
+  resources :player_stats
+
+  resources :players
+
+  resources :teams
+
   resources :events
 
   resources :combines
