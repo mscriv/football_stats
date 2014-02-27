@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227181954) do
+ActiveRecord::Schema.define(version: 20140227185535) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 20140227181954) do
     t.decimal  "_40_yd_dash",   precision: 10, scale: 2
     t.integer  "bench_press"
     t.decimal  "vertical_jump", precision: 10, scale: 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "events", force: true do |t|
+    t.string   "name"
+    t.date     "date"
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

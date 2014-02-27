@@ -1,4 +1,6 @@
 FootballStats::Application.routes.draw do
+  resources :events
+
   resources :combines
 
   # The priority is based upon order of creation: first created -> highest priority.
